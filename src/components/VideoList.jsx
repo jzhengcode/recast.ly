@@ -1,15 +1,15 @@
 // Do we need import here or we don't because data flow is App.jsx -> VideoList.jsx -> VideoListEntry.jsx?
-// import VideoListEntry from './VideoListEntry.js';
+import VideoListEntry from './VideoListEntry.js';
 
 
 
 var VideoList = (props) => (
-  {console.log(props)}
+
   <div className="video-list">
-    {/* {props.videos.map(video =>
+    {props.videos.map(video =>
       <VideoListEntry video={video}/>
       )
-    } */}
+    }
   </div>
 );
 
