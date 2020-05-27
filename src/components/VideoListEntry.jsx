@@ -1,4 +1,5 @@
 var VideoListEntry = (props) => (
+  // {console.log(props)}
   <div className="video-list-entry media">
     <div className="media-left media-middle">
       <img className="media-object" src={props.snippet.thumbnails.default} alt="" />

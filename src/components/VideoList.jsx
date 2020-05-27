@@ -1,4 +1,4 @@
-// import VideoListEntry from './VideoListEntry.js';
+import VideoListEntry from './VideoListEntry.js';
 // import exampleVideoData from '../data/exampleVideoData.js';
 // var videos = [];
 
@@ -32,16 +32,17 @@ var VideoList = (props) => {
   //   videos.push(videoObj);
   // }
 
-
-
+  // console.log(props.videos);
+  render () {
   return (
   <div className="video-list">
     {/* <div><h5><em>videoListEntry</em> view goes here</h5></div> */}
-      {props.videos.map(singleEntry =>
-      <VideoListEntry singleEntry = {singleEntry}/>
+      {props.videos.map(video =>
+      <VideoListEntry video = {video}/>
       )}
   </div>
   );
+      };
 };
 {/* <div><h5><em>{props.snippet.title.map(title => <VideoListEntry)}</em></h5></div> */}
 
