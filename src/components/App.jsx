@@ -8,6 +8,8 @@ class App extends React.Component {
     super();
     this.state = {
       VideoPlayer: exampleVideoData[0],
+      // needs to be dynamic
+      // function that will connect to the on click event in videolistentry somehow?
       VideoList: exampleVideoData
     };
   }
